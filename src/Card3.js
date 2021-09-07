@@ -12,7 +12,8 @@ const Card3=()=>{
     },[])
     return(
         <>
-        {data.map((item)=>(
+        {data.map((item,id)=>(
+            <div key={id}>
         <div className="container mt-5 mb-5">
     <div className="row d-flex align-items-center justify-content-center">
         <div className="col-md-6">
@@ -55,8 +56,9 @@ const Card3=()=>{
         </div>
     </div>
 </div>
-
+</div>
         ))}
+        )
         </>
     )
 }
